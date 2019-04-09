@@ -1,0 +1,142 @@
+.header {
+  height: 80px;
+  position: absolute;
+  left:0;
+  right: 0;
+  top: 0;
+  padding: 25px 20px 0px 20px;
+  background: $c-background-gray;
+  z-index: 10;
+
+
+  &__wraper  {
+    position: relative;
+  }
+
+  &__logo {
+    color: $c-grey;
+    width: 169px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 0px;
+
+    @include mobile {
+      left: 38px;
+    }
+
+    p {
+      font-size: 14px;
+
+      @include sm-size {
+        display: inline-block;
+      }
+    }
+  }
+
+  &__menu-wraper {
+    width: 100%;
+    height: 100%;
+    padding-left: 220px;
+  }
+  &__menu {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    justify-content: space-between;
+    text-align: right;
+    float: right;
+    max-width: 870px;
+
+    @include desktop {
+      width: 100%;
+    }
+  }
+
+  &__menu-item {
+    color: $c-text-active;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 900;
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &_scrolled {
+    background: white;
+    position: fixed;
+    padding-top: 15px;
+    border-bottom: 1px solid #f3f3f3;
+  }
+
+  .navbar-toggle {
+    float: left;
+    margin: 0px 10px 0px 0px;
+    padding: 2px 25px 1px 0px;
+    display: none;
+
+    @include mobile {
+      display: block;
+    }
+
+    .icon-bar {
+      background: $c-text-active;
+      height: 4px;
+      margin-top: 3px;
+
+      &:nth-child(2) {
+        margin-top: 0px;
+      }
+    }
+  }
+
+  &__mobile-menu {
+    background-color: #125994;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 75px;
+    z-index: 20;
+
+    .button_menu {
+      margin-top: 35px;
+    }
+  }
+
+  &__mobile-menu-item {
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 900;
+    padding: 25px;
+
+    &:hover, &:focus, &:active {
+      color: white;
+    }
+  }
+
+  &_mobile-menu-active {
+    @include mobile {
+
+      .header__mobile-menu {
+        display: flex;
+      }
+
+
+      .navbar-toggle {
+        z-index: 50;
+
+        .icon-bar {
+          background: white;
+        }
+      }
+    }
+  }
+}

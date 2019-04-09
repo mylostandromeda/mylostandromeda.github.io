@@ -1,0 +1,44 @@
+body {
+  background: $b-white;
+  color: $c-black;
+  font-family: $f-main;
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+  padding: 0;
+  margin: 0px 0px 40px 0px;
+  font-family: $f-bold;
+}
+
+h2 {
+  font-size: 30px;
+  margin: 0px 0px 25px 0px;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+b {
+  font-family: $f-medium;
+}
+
+a {
+  &:hover, &:focus, &:active {
+    text-decoration: none;
+    outline: none !important;
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+video {
+  width: 100%;
+}

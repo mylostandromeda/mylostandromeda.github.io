@@ -1,0 +1,28 @@
+.examples {
+
+  h3 {
+    @include mobile {
+      text-align: center;
+    }
+  }
+
+  p {
+    @include mobile {
+      text-align: center;
+    }
+  }
+  &__img {
+
+    img, video {
+      box-shadow: 0 10px 20px rgba(153,153,153,0.3);
+      border-radius: 5px;
+    }
+
+    @include mobile {
+      padding-top: 40px;
+    }
+  }
+  img {
+    width: 100%;
+  }
+}

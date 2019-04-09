@@ -1,0 +1,23 @@
+@font-face {
+  font-family: geometrialight;
+  src:  url("../fonts/GeometriaLight.otf") format("opentype"),
+        url('../fonts/GeometriaLight.woff2') format('woff2'),
+        url('../fonts/GeometriaLight.woff') format('woff'),
+        url('../fonts/GeometriaLight.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: geometriabold;
+  src:  url("../fonts/GeometriaBold.otf") format("opentype"),
+        url('../fonts/GeometriaBold.woff2') format('woff2'),
+        url('../fonts/GeometriaBold.woff') format('woff'),
+        url('../fonts/GeometriaLight.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: geometriamedium;
+  src:  url("../fonts/GeometriaMedium.otf") format("opentype"),
+        url('../fonts/GeometriaMedium.woff2') format('woff2'),
+        url('../fonts/GeometriaMedium.woff') format('woff'),
+        url('../fonts/GeometriaMedium.ttf') format('truetype');
+}

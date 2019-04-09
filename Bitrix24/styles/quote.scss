@@ -1,0 +1,69 @@
+.quote {
+  margin-top: 50px;
+
+  &__text {
+    background-image: url("../images/quote-symbol.png");
+    background-position: top left;
+    background-repeat: no-repeat;
+  }
+
+  &__text-p {
+    font-size: 22px;
+    font-style: italic;
+    color: $c-text-active;
+    padding: 45px 0px 0px 70px;
+
+    @include mobile {
+      font-size: 17px;
+    }
+  }
+
+  &__info {
+    padding: 45px 0px 0px 70px;
+  }
+
+  &__info-img {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  &__info-author {
+    line-height: 39px;
+    display: inline-block;
+    color: #555;
+    font-family: $f-medium;
+    border-left: 1px solid #e5e5e5;
+    padding-left: 30px;
+    margin-left: 5px;
+  }
+
+  &__indicators {
+     z-index: 1;
+
+    .active {
+      background: #073c96;
+    }
+
+    li {
+      background: #e5e5e5;
+      border: none;
+
+      &:not(:last-child) {
+        margin-right: 5px;
+      }
+    }
+
+    @include desktop {
+      transform: translateY(-100%);
+      top: 0;
+      right: 0;
+      left: initial;
+      width: initial;
+    }
+
+    @include mobile {
+      top: 10px;
+      bottom: initial;
+    }
+  }
+}

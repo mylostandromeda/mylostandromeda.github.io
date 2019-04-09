@@ -1,0 +1,21 @@
+.page {
+  padding: 100px 0px;
+
+  &__margin-b {
+    margin-bottom: 120px;
+  }
+
+  &__margin-b-small {
+    margin-bottom: 50px;
+  }
+
+  &_gray {
+    background: $c-background-gray;
+ }
+
+  &__p {
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 27px;
+  }
+}

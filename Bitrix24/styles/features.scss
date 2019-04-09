@@ -1,0 +1,23 @@
+.features {
+  text-align: center;
+
+  &__check-list {
+    h2 {
+      font-family: $f-medium;
+      margin: 0px 0px 40px 0px;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 75px;
+
+    p {
+      font-size: 22px;
+    }
+  }
+
+  .button_large {
+    margin: 0;
+  }
+}

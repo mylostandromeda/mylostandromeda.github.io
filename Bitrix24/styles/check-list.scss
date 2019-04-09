@@ -1,0 +1,37 @@
+.check-list {
+  padding-left: 10px;
+  margin-bottom: 67px;
+
+  li {
+    background-repeat: no-repeat;
+    background-position: left center;
+    list-style: none;
+    margin-bottom: 34px;
+     text-align: left;
+    font-size: 18px;
+    font-weight: 300;
+    padding-left: 68px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    line-height: 28px;
+
+    @include desktop {
+      white-space: nowrap;
+    }
+  }
+
+  &_cross {
+    li {
+      background-image: url("../images/cross.png");
+    }
+  }
+
+  &_check {
+
+    li {
+      background-image: url("../images/check.png");
+      margin-bottom: 20px;
+    }
+  }
+}

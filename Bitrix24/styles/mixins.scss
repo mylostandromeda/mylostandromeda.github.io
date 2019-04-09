@@ -1,0 +1,37 @@
+$screen-md: 992px;
+
+@mixin md-size {
+  @media (min-width: 992px) and (max-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin sm-size {
+  @media (min-width: 768px) and (max-width: 991px){
+    @content;
+  }
+}
+
+@mixin xs-size {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin lg-size {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: #{$screen-md - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$screen-md}) {
+    @content;
+  }
+}
