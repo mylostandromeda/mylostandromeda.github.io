@@ -1,0 +1,70 @@
+.main-page__about-block {
+  width: 50%;
+
+  @include mobile {
+    width: 100%;
+    padding: 20px;
+  }
+
+  p {
+    font-family: $mont;
+    color:  #333333;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+
+    @include tablet {
+      font-size: 13px;
+    }
+  }
+
+  ul {
+    li {
+      display: flex;
+      align-items: baseline;
+      font-family: $mont;
+      color:  #333333;
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+}
+
+.main-page__about-circle {
+  border-radius: 50%;
+  border-width: 2px;
+  border-color:  #b59f74;
+  border-style: solid;
+  width: 4px;
+  height: 4px;
+  margin-right: 10px;
+}
+.main-page__about-text {
+  margin: 20px 0px 0px 30px;
+
+  @include mobile {
+    margin: 20px 0px 0px 0px;
+  }
+}
+
+
+.main-page__about-line {
+  margin: 0px 50px;
+  width: 2px;
+  background: #b59f74;
+  flex-shrink: 0;
+
+  @include mobile {
+    width: 80%;
+    height: 2px;
+    margin: 30px auto;
+  }
+}
+.main-page__about-wrap {
+  display: flex;
+  justify-content: space-between;
+
+  @include mobile {
+    flex-direction:column;
+  }
+}

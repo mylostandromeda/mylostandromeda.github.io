@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+}
+
+h4 {
+  font-weight: 700;
+}
+h5 {
+  font-family: $play-fair;
+  color:  #b59f74;
+  font-size: 16px;
+  font-weight: 700;
+
+  @include tablet {
+    font-size: 14px;
+  }
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+ul {
+  list-style: none;
+  padding: 0px;
+}
+

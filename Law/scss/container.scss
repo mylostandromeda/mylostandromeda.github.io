@@ -1,0 +1,17 @@
+.container {
+  margin: auto;
+
+  @include desktop {
+    width: 1140px;
+  }
+
+  @include tablet {
+    width: 768px;
+  }
+
+  @include mobile {
+    width: 100%;
+    min-width: 320px;
+  }
+}
+

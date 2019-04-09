@@ -1,0 +1,63 @@
+.examples-slider {
+  display: flex;
+  height: 100%;
+  position: relative;
+
+  .slick-prev {
+    top: -20px;
+    left: 30px;
+  }
+  .slick-next {
+    top: -20px;
+    left: 100px;
+  }
+
+  &__block {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 30px;
+    height: 100%;
+
+    @include tablet {
+      margin: 0px;
+    }
+  }
+  &__item {
+    width: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .line {
+      display: inline-block;
+    }
+
+    &:hover {
+      .examples-slider__content {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__content {
+    cursor: pointer;
+    text-align: center;
+    margin: 15px 15px;
+    padding: 99px 0px;
+    background: rgba(85, 76, 89, 0.8);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+
+    p {
+      padding: 10px 0px;
+      font-family: $mont;
+      color:  #b6a176;
+      font-size: 16px;
+      font-weight: 400;
+      width: 80%;
+      margin: auto;
+    }
+  }
+
+}

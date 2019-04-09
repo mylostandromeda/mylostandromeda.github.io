@@ -1,0 +1,28 @@
+.btn {
+  font-family: $play-fair;
+  color:  #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  background: #b59f74;
+  padding: 20px 40px;
+  border: 1px solid #b59f74;
+  transition: all 0.2s ease;
+
+  &:hover {
+    color: #b59f74;
+    background: transparent;
+  }
+
+  @include tablet {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  &_form {
+    padding: 20px 0px;
+
+    @include desktop {
+      width: 30%;
+    }
+  }
+}

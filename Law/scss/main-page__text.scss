@@ -1,0 +1,33 @@
+.main-page__text {
+  font-family: $mont;
+  color:  #333333;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+.main-page__text_brown {
+  font-family: $play-fair;
+  color:  #b59f74;
+  font-weight: 700;
+}
+
+.main-page__text_quote {
+  font-family: $play-fair;
+  color:  #ffffff;
+  font-weight: 700;
+  line-height: 22px;
+
+  @include tablet {
+    font-size: 11px;
+    line-height: 17px;
+    font-weight: 500;
+  }
+}
+
+
+.main-page__text_quote-transparent {
+  font-family: $mont;
+  color:  #333333;
+  font-size: 12px;
+  font-weight: 400;
+}

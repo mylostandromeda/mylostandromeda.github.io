@@ -1,0 +1,29 @@
+.nav {
+  background: #47414f;
+  
+  &_transparent {
+    background: transparent;
+  }
+}
+
+.nav-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 80px;
+
+  padding: 0px 20px;
+
+  @include desktop {
+    padding: 0px;
+  }
+}
+
+
+.nav_logo {
+
+  @include desktop {
+    margin-left: 38px;
+  }
+}
+

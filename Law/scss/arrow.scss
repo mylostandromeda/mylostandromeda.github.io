@@ -1,0 +1,38 @@
+.arrow {
+  display: flex;
+  align-items: center;
+
+  &_space_right {
+    margin-right: 30px;
+  }
+
+  &__body {
+    display: block;
+    width: 35px;
+    height: 3px;
+    background: #b59f74;
+    transition: all 0.2s ease;
+  }
+
+  &__body_left {
+      margin-left: -7px;
+  }
+  &__body_right {
+      margin-right: -7px;
+  }
+
+  &__direction {
+    border: solid #b59f74;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transition: all 0.2s ease;
+  }
+
+  &__direction_left {
+    transform: rotate(135deg);
+  }
+  &__direction_right {
+    transform: rotate(-45deg);
+  }
+}

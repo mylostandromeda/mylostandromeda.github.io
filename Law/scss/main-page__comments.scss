@@ -1,0 +1,9 @@
+.main-page__comments {
+  height: 700px;
+  background: linear-gradient(90deg, #47414f calc(20% - 985px), #06060b calc(100% - 985px), rgba(4, 4, 9, 0.82) calc(100% - 985px + 40px), rgba(4, 4, 9, 0.07) calc(100% - 985px + 135px), rgba(4, 4, 9, 0) calc(100% - 985px + 145px)), url("../img/comments/comments-bg.png") center right no-repeat;
+
+  @include tablet {
+    height: 100%;
+    background-size: cover;
+  }
+}

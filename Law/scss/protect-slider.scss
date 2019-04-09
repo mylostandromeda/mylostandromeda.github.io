@@ -1,0 +1,55 @@
+.protect-slider {
+  margin-top: 100px;
+
+  &__item {
+    background: #47414f;
+    text-align: center;
+    margin: 0px 20px;
+    padding: 50px 64px 30px 64px;
+    height: 320px;
+
+
+    @include tablet {
+      padding: 50px 30px 50px 30px;
+      height: 250px;
+    }
+
+    h5 {
+      padding-top: 20px;
+
+    }
+  }
+  &__item-line {
+    margin: 15px 0px;
+    background:  #b59f74;
+    width: 50px;
+    height: 2px;
+    display: inline-block;
+  }
+
+
+  &__item-text {
+    font-family: $mont;
+    color:  #ffffff;
+    font-size: 14px;
+    font-weight: 300;
+
+    @include tablet {
+      font-size: 12px;
+    }
+  }
+}
+
+
+.protect-slider__block {
+  position: relative;
+  .slick-prev {
+    right: 100px;
+    top: -20px;
+  }
+  .slick-next {
+    right: 40px;
+    top: -20px;
+  }
+}
+

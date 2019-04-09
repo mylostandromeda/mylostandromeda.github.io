@@ -1,0 +1,32 @@
+.main-page__experience {
+  .main__title-head {
+
+    @include desktop {
+      width: 55%;
+    }
+
+    @include tablet {
+      width: 85%;
+    }
+  }
+
+    img {
+      position: absolute;
+      top: 100%;
+      left: 52%;
+      transform: translate(-50%, -50%);
+
+      @include tablet {
+        left: 83%;
+      }
+    }
+}
+
+.main-page__experience-facts {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include tablet {
+    margin-top: 20px;
+  }
+}

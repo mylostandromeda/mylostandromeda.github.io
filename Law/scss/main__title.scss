@@ -1,0 +1,45 @@
+.main__title {
+  position: relative;
+}
+
+.main__title_space {
+  margin-left: 95px;
+
+  @include mobile {
+    margin: 0px;
+  }
+}
+
+.main__title-head {
+    font-size: 24px;
+    font-family: $play-fair;
+    color:  #b59f74;
+    font-weight: 700;
+
+  @include tablet {
+    font-size: 18px;
+  }
+}
+
+.main__title-head_lg {
+  font-family: $yeseva-font;
+  font-size: 32px;
+  font-weight: 400;
+
+  @include tablet {
+    font-size: 25px;
+  }
+}
+
+.main__title-head_white {
+  color: #fff;
+}
+.main__title-line {
+  position: absolute;
+  top: 15px;
+  left: -70px;
+
+  @include mobile {
+    display: none;
+  }
+}

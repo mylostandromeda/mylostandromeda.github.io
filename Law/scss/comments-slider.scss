@@ -1,0 +1,70 @@
+.comments-slider {
+  margin-top: 50px;
+  position: relative;
+  width: 60%;
+
+  .slick-prev {
+    bottom: -100px;
+    right: 100px;
+
+    @include tablet {
+      bottom: -30px;
+    }
+  }
+  .slick-next {
+    bottom: -100px;
+    right: 30px;
+
+    @include tablet {
+      bottom: -30px;
+    }
+  }
+
+  &__wrap {
+    padding: 0px 55px;
+  }
+
+  &__quote {
+    position: absolute;
+  }
+
+  &__quote_top {
+    top: -5px;
+    left: -35px;
+  }
+
+  &__quote_bottom {
+    bottom: -8px;
+    right: -25px;
+  }
+
+  &__item {
+    padding-top: 10px;
+  }
+
+  &__content {
+    position: relative;
+    font-family: $mont;
+    color:  #ffffff;
+    font-size: 14px;
+    font-weight: 300;
+
+    @include tablet {
+      font-size: 12px;
+    }
+  }
+
+  &__author {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+
+    span {
+      margin-left: 30px;
+      font-family: $mont;
+      color:  #b8a37a;
+      font-size: 16px;
+      font-weight: 300;
+    }
+  }
+}

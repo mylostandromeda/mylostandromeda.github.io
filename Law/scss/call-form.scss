@@ -1,0 +1,53 @@
+.call-form {
+  form {
+
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+    }
+    input {
+      background: #32302f;
+      display: block;
+      padding: 25px 25px;
+      color: #fff;
+      border: 1px solid #b59f74;
+      margin-bottom: 40px;
+      font-family: $mont;
+      font-size: 14px;
+      font-weight: 400;
+      outline: none;
+
+      @include desktop {
+        width: 30%;
+      }
+
+      &::placeholder {
+        color: #fff;
+      }
+    }
+
+    textarea {
+      padding: 25px 25px;
+      margin-bottom: 40px;
+      font-family: $mont;
+      font-size: 14px;
+      font-weight: 400;
+      outline: none;
+      background: #32302f;
+      display: block;
+      color: #fff;
+      border: 1px solid #b59f74;
+
+      &::placeholder {
+        color: #fff;
+      }
+      resize: none;
+
+
+      @include desktop {
+        width: 40%;
+      }
+    }
+  }
+}

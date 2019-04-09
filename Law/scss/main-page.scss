@@ -1,0 +1,25 @@
+.main-page {
+  padding: 100px 0px 90px 0px;
+
+  @include tablet {
+    padding: 70px 0px 80px 0px;
+  }
+
+  &_white {
+    background: #fff;
+  }
+
+  &_purple {
+    background: #47414f;;
+  }
+  &_lg {
+    padding: 120px 0px;
+
+    @include tablet {
+      padding: 80px 0px;
+    }
+  }
+  &_sm {
+    padding: 65px 0px;
+  }
+}

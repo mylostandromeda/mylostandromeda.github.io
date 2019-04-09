@@ -1,0 +1,55 @@
+.statistic-block {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  background: transparent;
+  margin-left: 95px;
+  @include tablet {
+    width: 70%;
+    margin: 0px;
+  }
+
+  &__item {
+    text-align: center;
+    padding: 20px;
+    border: none;
+    width: 34%;
+
+    &:first-child {
+      border-right: 1px solid #333333;
+      border-bottom: 1px solid #333333;
+      margin-bottom: -1px;
+    }
+
+    &:last-child {
+      border-top: 1px solid #333333;
+      border-left: 1px solid #333333;
+      margin-left: -1px;
+    }
+
+    span {
+      display: block;
+      padding-top: 25px;
+      font-family: $mont;
+      color:  #333333;
+      font-size: 18px;
+      font-weight: 400;
+
+      @include tablet {
+        font-size: 16px;
+      }
+    }
+
+  }
+
+  &__percent {
+    font-family: $play-fair;
+    color:  #b8a37a;
+    font-size: 48px;
+    font-weight: 700;
+
+    @include tablet {
+      font-size: 40px;
+    }
+  }
+}

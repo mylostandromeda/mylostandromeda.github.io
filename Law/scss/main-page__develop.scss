@@ -1,0 +1,27 @@
+.main-page__develop {
+
+}
+.main-page__develop-wrap {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+.main-page__develop-block {
+  flex-basis: 50%;
+}
+.main-page__develop-text {
+  margin: 0px 60px;
+
+  p {
+    padding: 13px 0px;
+  }
+  p:first-child {
+    padding-top: 0px;
+  }
+  p:last-child {
+    padding-bottom: 0px;
+  }
+  ul {
+    margin: 0px;
+  }
+}

@@ -1,0 +1,21 @@
+.main-page__examples {
+
+}
+.main-page__examples-wrap {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 76px;
+
+  @include tablet {
+    flex-direction: column;
+  }
+}
+
+.main-page__examples-block {
+  width: 50%;
+
+  @include tablet {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+}
