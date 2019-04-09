@@ -7,3 +7,5 @@
 [Prestige Cars](mylostandromeda.github.io/Prestige_cars/)
 
 [Bitrix24 Open lines](mylostandromeda.github.io/Bitrix24/)
+
+[Law (Desktop & Tablet)](mylostandromeda.github.io/Law/)
