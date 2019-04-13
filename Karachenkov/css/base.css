@@ -1,5 +1,9 @@
 @import url(../node_modules/normalize.css/normalize.css);
 @import url(../slick-1.8.0/slick/slick.css);
+
+body {
+  margin: 0;
+}
 .slider {
   display: flex;
   padding: 55px 0px 82px 0px;
