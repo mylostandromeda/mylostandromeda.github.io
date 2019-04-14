@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Open+Sans');
+@import "mixins";
+
+iframe {
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+.default {
+  overflow: hidden;
+}
+.active {
+  overflow: inherit;
+}
+.page {
+  padding: 50px 0px;
+}
+.container {
+  margin: auto;
+
+  @include tablet {
+    width: 768px;
+  }
+
+  @include desktop {
+    width: 1140px;
+  }
+  @include min-tablet {
+    width: 100%;
+  }
+  @include mobile {
+    width: 100%;
+    min-width: 320px;
+  }
+}
+.head {
+  opacity: 1;
+  text-align: center;
+  position: absolute;
+  font-family: 'Comfortaa', cursive;
+  border: 3px solid #000;
+  width: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  h1 {
+    margin-top: 20px;
+
+    @include mobile {
+      font-size: 17px;
+    }
+
+    @include mobile-lg {
+      font-size: 25px;
+    }
+
+  }
+  img {
+    margin: 50px 0px;
+    height: 100%;
+    width: 60%;
+  }
+  span {
+    font-size: 60px;
+    color: #fff;
+    display: block;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @include tablet {
+      font-size: 40px;
+    }
+
+
+    @include mobile {
+      top: 43%;
+      font-size: 20px;
+    }
+
+    @include mobile-lg {
+      font-size: 40px;
+    }
+  }
+  a {
+    margin: auto;
+    display: block;
+    outline: none;
+    background: #000;
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    padding: 10px 0px;
+    width: 30%;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border: 1px solid #000;
+    transition: all 0.2s ease;
+    text-decoration: none;
+
+    &:hover {
+      background: #fff;
+      color: black;
+    }
+
+    @include tablet {
+      padding: 15px 0px;
+      width: 50%;
+    }
+
+    @include mobile-lg {
+      width: 50%;
+    }
+
+    @include mobile {
+      font-size: 10px;
+      width: 50%;
+    }
+  }
+}
+
+.head-close {
+  display: none;
+}
+.main-block {
+  display: none;
+
+  &__header {
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    background: #222;
+    color: #fff;
+
+    h2 {
+      font-size: 24px;
+
+      @include tablet {
+        font-size: 17px;
+      }
+
+      @include mobile {
+        font-size: 15px;
+        padding: 0px 10px;
+        line-height: 30px;
+      }
+    }
+
+  }
+
+  &__congratulation-block {
+    width: 60%;
+    border: 2px solid #222;
+    border-top: none;
+    padding: 50px 30px;
+    margin: auto;
+
+    @include mobile {
+      width: 90%;
+    }
+
+    @include tablet {
+      width: 90%;
+    }
+
+    .heart-block {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .heart {
+      width: 40px;
+      height: 40px;
+    }
+    p {
+      font-family: 'Comfortaa', cursive;
+      line-height: 30px;
+
+      @include mobile {
+        font-size: 10px;
+        line-height: 15px;
+      }
+
+
+      @include mobile-md {
+        font-size: 11px;
+        line-height: 20px;
+      }
+
+      @include mobile-lg {
+        font-size: 14px;
+        line-height: 20px;
+      }
+
+      span {
+        color: darkred;
+        font-size: 25px;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.memory-block {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  img {
+    border: 5px solid #000;
+    margin: 5px;
+    width: 25%;
+    height: 300px;
+
+    @include mobile {
+      width: 80%;
+    }
+
+    @include mobile-md {
+    width: 55%;
+    }
+
+    @include mobile-lg {
+      width: 40%;
+    }
+
+    @include tablet {
+      width: 32%;
+    }
+  }
+}
+
+.main-block__family {
+  text-align: center;
+
+  h3 {
+    font-family: 'Comfortaa', cursive;
+    font-size: 30px;
+    margin: 0;
+
+    span {
+      color: darkred;
+    }
+  }
+  img {
+    height: 400px;
+    border-radius: 10%;
+    margin: 20px 0px;
+  }
+}
+
+.footer {
+  background: #222;
+  text-align: center;
+  color: white;
+  font-family: 'Comfortaa', cursive;
+}
+
