@@ -7,3 +7,5 @@
 [Bitrix24 Open lines](mylostandromeda.github.io/Bitrix24/)
 
 [Law (Desktop & Tablet)](mylostandromeda.github.io/Law/)
+
+[Meandr](mylostandromeda.github.io/Meandr/)
