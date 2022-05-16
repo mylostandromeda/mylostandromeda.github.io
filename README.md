@@ -13,3 +13,5 @@
 [Law (Desktop & Tablet)](mylostandromeda.github.io/Law/)
 
 [Караченков и Партнёры](mylostandromeda.github.io/Karachenkov/)
+
+[Megogo](mylostandromeda.github.io/megogo)
